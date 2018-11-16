@@ -96,3 +96,5 @@ multiply:
 	add $t0, $t0, 1
 	lb $t1,0($t0)
 	j Ascii_convert
+Exit:
+	move $a0, $t6 
