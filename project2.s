@@ -56,5 +56,11 @@ go_back_beginning:
 	sub $t0, $t0, $t3 
 	la $t3, 0 			
 	
+go_foward:
+	lb $t1,0($t0)
+	addi $t0, $t0, 1
+	beq $t1, 32, go_foward
+	
+
 
 	
