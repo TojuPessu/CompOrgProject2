@@ -32,3 +32,5 @@ skip_spaces:
 	addi $t0, $t0, 1
 	addi $t3, $t3, 1
 	beq $t1, 32, skip_spaces
+	beq $t1, 10, Empty_Error
+	beq $t1, $0, Empty_Error
