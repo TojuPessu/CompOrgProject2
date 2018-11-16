@@ -52,4 +52,8 @@ see_some_more_chars_or_spaces:
 	bne $t1, 32, Invalid_Base_Error
 	j see_some_more_chars_or_spaces
 
+go_back_beginning:
+	sub $t0, $t0, $t3 	
+	
+
 	
