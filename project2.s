@@ -78,5 +78,9 @@ do_stuff:
 	lb $t1, ($t0)
 	sub $s1, $t3, $t4
 
-
+Find_greatest_power:	
+	beq $s1, 0, Ascii_convert		
+	mult $t4, $s0
+	mflo $t4
+	sub $s1, $s1, 1
 	
