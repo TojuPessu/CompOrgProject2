@@ -122,3 +122,14 @@ Number:
 	addi $t1, $t1, -48 	
 	j multiply	
 
+#ERROR MESSAGES
+Empty_Error:
+	la $a0, invalid_empty #loads string
+	li $v0, 4 
+	syscall
+
+	li $v0,10 #ends program
+	syscall
+	
+	
+
