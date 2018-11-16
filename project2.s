@@ -60,6 +60,7 @@ go_foward:
 	lb $t1,0($t0)
 	addi $t0, $t0, 1
 	beq $t1, 32, go_foward
+addi $t0, $t0, -1
 	
 
 
