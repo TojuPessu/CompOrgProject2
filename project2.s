@@ -18,5 +18,8 @@ add $t7, $0, 2
 la $t0, input_string			
 lb $t1,0($t0) 	
 
+#CHECKING IF INPUT IS EMPTY
+beq $t1, 10, Empty_Error 	
+beq $t1, 0 Empty_Error
 
 
