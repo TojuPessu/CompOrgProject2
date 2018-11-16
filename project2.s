@@ -83,4 +83,4 @@ Find_greatest_power:
 	mult $t4, $s0
 	mflo $t4
 	sub $s1, $s1, 1
-	
+	j Find_greatest_power
