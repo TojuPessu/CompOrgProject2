@@ -95,3 +95,4 @@ multiply:
 	mflo $t4
 	add $t0, $t0, 1
 	lb $t1,0($t0)
+	j Ascii_convert
