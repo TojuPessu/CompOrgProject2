@@ -109,4 +109,16 @@ Exit:
 	blt $t1, 97, Invalid_Base_Error #checks if character is between 76 and 96
 	blt $t1, 122, Lower_Case #checks if character is between 97 and 121
 	blt $t1, 128, Invalid_Base_Error #checks if character is between 118 and 127
+	
+Upper_Case:
+	addi $t1, $t1, -55 
+	j multiply 			
+
+Lower_Case:
+	addi $t1, $t1, -87 	
+	j multiply				
+
+Number:
+	addi $t1, $t1, -48 	
+	j multiply	
 
