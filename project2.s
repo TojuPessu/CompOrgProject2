@@ -72,6 +72,11 @@ find_length:
 	beq $t3, 4, Too_Long_Error
 	j find_length
 	
+do_stuff:
+	sub $t0, $t0, $t3
+	sub $t3, $t3, $t4
+	lb $t1, ($t0)
+	sub $s1, $t3, $t4
 
 
 	
