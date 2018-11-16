@@ -98,3 +98,5 @@ multiply:
 	j Ascii_convert
 Exit:
 	move $a0, $t6 
+	li $v0, 1 
+	syscall
