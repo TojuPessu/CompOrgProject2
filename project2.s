@@ -62,6 +62,10 @@ go_foward:
 	beq $t1, 32, go_foward
 addi $t0, $t0, -1
 	
+find_length:
+	lb $t1, ($t0)
+	addi $t0, $t0, 1
+	addi $t3, $t3, 1 
 
 
 	
