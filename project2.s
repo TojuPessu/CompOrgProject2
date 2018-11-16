@@ -70,6 +70,7 @@ find_length:
 	beq $t1, 0, do_stuff
 	beq $t1, 32, do_stuff
 	beq $t3, 4, Too_Long_Error
+	j find_length
 	
 
 
