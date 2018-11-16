@@ -47,4 +47,9 @@ see_some_more_chars_or_spaces:
 	lb $t1,0($t0)
 	addi $t0, $t0, 1
 	addi $t3, $t3, 1
+	beq $t1, 10, go_back_beginning
+	beq $t1, 0, go_back_beginning
+	bne $t1, 32, Invalid_Base_Error
+	j see_some_more_chars_or_spaces
+
 	
