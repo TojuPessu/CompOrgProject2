@@ -27,4 +27,8 @@ addi $t4, $0, 1
 addi $t5, $0, 0 	
 addi $t6, $0, 0
 
-
+skip_spaces:
+	lb $t1,0($t0)
+	addi $t0, $t0, 1
+	addi $t3, $t3, 1
+	beq $t1, 32, skip_spaces
