@@ -53,7 +53,8 @@ see_some_more_chars_or_spaces:
 	j see_some_more_chars_or_spaces
 
 go_back_beginning:
-	sub $t0, $t0, $t3 	
+	sub $t0, $t0, $t3 
+	la $t3, 0 			
 	
 
 	
