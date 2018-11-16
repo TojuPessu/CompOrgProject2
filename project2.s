@@ -15,6 +15,8 @@ add $t1, $0, 0
 add $t3, $0, 0 
 add $t7, $0, 2
 
+la $t0, input_string			
+lb $t1,0($t0) 	
 
 
 
