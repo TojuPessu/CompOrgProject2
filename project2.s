@@ -66,6 +66,11 @@ find_length:
 	lb $t1, ($t0)
 	addi $t0, $t0, 1
 	addi $t3, $t3, 1 
+	beq $t1, 10, do_stuff
+	beq $t1, 0, do_stuff
+	beq $t1, 32, do_stuff
+	beq $t3, 4, Too_Long_Error
+	
 
 
 	
