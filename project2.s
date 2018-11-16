@@ -22,4 +22,9 @@ lb $t1,0($t0)
 beq $t1, 10, Empty_Error 	
 beq $t1, 0 Empty_Error
 
+addi $s0, $0, 35 
+addi $t4, $0, 1 	
+addi $t5, $0, 0 	
+addi $t6, $0, 0
+
 
